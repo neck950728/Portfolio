@@ -1,0 +1,25 @@
+{
+	"list":
+	[
+		{
+			"icon":"/Portfolio/resources/images/main/contact/phone.png",
+			"name":"010-5779-6682",
+			"type":"Phone"
+		},
+		{
+			"icon":"/Portfolio/resources/images/main/contact/email.png",
+			"name":"a57796682@gmail.com",
+			"type":"E-mail"
+		},
+		{
+			"icon":"/Portfolio/resources/images/main/contact/github.png",
+			"name":"github.com/neck950728",
+			"type":"GitHub"
+		},
+		{
+			"icon":"/Portfolio/resources/images/main/contact/kakaotalk.png",
+			"name":"kmj950728",
+			"type":"KakaoTalk"
+		}
+	]
+}

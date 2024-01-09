@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+*{
+	box-sizing:border-box;
+	
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	
+	font-family:Noto Sans KR, sans-serif;
+}
+
+i{
+	font-style:normal;
+}
+
+ul{
+	margin:0px; padding:0px;
+	list-style:none;
+}
+
+
+
+
+
+/* details */
+#detailsBackground{
+	width:100%; height:100%;
+	position:fixed;
+	top:0px; left:0px;
+	background-color:rgba(0, 0, 0, 0.5);
+	z-index:2;
+}
+
+#detailsViewer{
+	position:absolute;
+	top:50%; left:50%;
+	transform:translate(-50%, -50%);
+	padding:0px 0px 10px 0px;
+	
+	background-color:white;
+}
+
+#detailsViewer > #title{
+	height:35px;
+	display:flex;
+	align-items:center;
+	padding:0px 5px;
+	background-color:#e5e5e5;
+}
+
+#detailsViewer > #title > img:first-of-type{
+	width:22px;
+}
+
+#detailsViewer > #title > img:last-of-type{
+	width:30px;
+	margin-left:auto; /* flex : 우측 정렬 */
+	cursor:pointer;
+}
+
+#detailsViewer > .slider .section{
+	padding:15px 30px;
+	overflow-y:auto;
+}
+
+#detailsViewer > .slider .slick-dots{
+	margin-top:10px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1768px){
+	#detailsViewer{
+		width:35%;
+	}
+}
+
+@media screen and (min-width:1600px) and (max-width:1767px){
+	#detailsViewer{
+		width:40%;
+	}
+}
+
+@media screen and (min-width:1024px) and (max-width:1599px){
+	#detailsViewer{
+		width:55%;
+	}
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+	#detailsViewer{
+		width:75%;
+	}
+}
+
+@media screen and (max-width:767px){
+	#detailsViewer{
+		width:100%;
+	}
+}

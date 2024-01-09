@@ -1,0 +1,96 @@
+<link rel="stylesheet" href="/Portfolio/resources/css/main/project/details/public.css" class="destroy">
+<link rel="stylesheet" href="/Portfolio/resources/css/main/project/details/bookle.css" class="destroy">
+
+<div id="detailsBackground">
+	<div id="detailsViewer">
+		<div id="title">
+			<img src="/Portfolio/resources/images/main/project/details.png"> 자세히 보기
+			<img src="/Portfolio/resources/images/main/project/details/close-icon.png" id="close">
+		</div>
+		<div class="slider">
+			<div class="section start">
+				<div class="center">
+					<img src="/Portfolio/resources/images/main/project/details/bookle/logo.png" id="logo">
+					<div>
+						<p>
+							&#128516; 안녕하세요!
+							<i class="emphasis">'자세히 보기'</i>란 제 담당 역할에 대한 기능 설명과
+						</p>
+						<p>프로젝트를 진행하면서 느낀점을 전달해드리기 위한 문서입니다! &#128195;</p>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/bookle/1.mp4"></video>
+				</div>
+				<div class="pxUp">
+					<p>&#127968; 먼저 <i class="emphasis">'메인'</i> 페이지입니다.</p>
+					<p>사용자가 검색을 하면 서버 소켓으로 특정 메시지를 보내, 키워드에 해당하는</p>
+					<p>도서 데이터를 받아옵니다.</p>
+					<p class="refer">키워드 생략 시 전체 도서 데이터를 받아옵니다.</p>
+				</div>
+			</div>
+			<div class="section">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/bookle/2.mp4"></video>
+				</div>
+				<div class="pxUp">
+					<p>&#128218; <i class="emphasis">'도서 리스트'</i> 페이지입니다.</p>
+					<p>받아온 도서 데이터를 기반으로 페이지당 7개의 도서가 표시되도록 처리하였습니다.</p>
+					<p>또한 도서 선택 시 해당 도서의 상세 정보를 확인할 수 있습니다.</p>
+				</div>
+			</div>
+			<div class="section" data-section="reserve">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/bookle/3.mp4"></video>
+				</div>
+				<div>
+					<p>&#128197; 마지막 <i class="emphasis">'예약'</i> 기능입니다.</p>
+					<ul>
+						<li>
+							<p>과거 날짜는 예약할 수 없으며, 현재 서버 날짜를 기준으로 5일 이상은</p>
+							<p>예약할 수 없도록 처리하였습니다.</p>
+						</li>
+						<li>
+							<p>예약 시 예약 만료일 전까지는 언제든 대여해갈 수 있습니다.</p>
+						</li>
+						<li>
+							<p>재고가 부족한 경우, 예약 대기를 할 수 있습니다.</p>
+							<p class="refer">최대 대기 번호는 도서의 총 재고 수와 같습니다.</p>
+							<p class="refer">ex) 총 재고 수 2개 = 대기 가능자 수 2명</p>
+						</li>
+						<li>
+							<p>도서를 대여했던 사용자가 반납을 할 경우, 대기 번호가 1번인 사용자는</p>
+							<p>자동으로 최대 기간(4일) 예약이 이루어집니다.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="section end">
+				<div class="center">
+					<img src="/Portfolio/resources/images/main/project/details/end.jpeg">
+					<div>
+						<p>&#128591; <i class="emphasis">마치며</i></p>
+						<p>Bookle은 단순하지만, 유일하게 '응용 소프트웨어' 개발을</p>
+						<p>목표로 한 프로젝트로서 색다른 경험이었습니다.</p>
+						<p>Swing을 활용하여 레이아웃, 컴포넌트 및 이벤트 처리를 객체 단위로 모듈화하는</p>
+						<p>과정에서 OOP 개념을 다지는 데 도움이 되긴 하였지만,</p>
+						<p>GUI를 구성하는 작업에 많은 시간이 소요되어, 개인적으로 스레드를</p>
+						<p>더욱 깊이 있게 다뤄보지 못한 점이 아쉬웠습니다.</p>
+						<p>그래도 기본적으로 멀티 스레드 기반 소켓 통신이 어떤 방식으로</p>
+						<p>이루어지는지를 경험할 수 있었고, 그중에서도 클라이언트와 서버 간의 프로토콜,</p>
+						<p>즉 데이터 교환 방식을 결정하여 사용자의 요청을 처리하는 과정에서</p>
+						<p>웹 애플리케이션과는 또 다른 매력을 느낄 수 있었습니다.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div style="display:none;" class="destroy">
+	<script type="text/javascript">
+		detailsCommonScript();
+	</script>
+</div>

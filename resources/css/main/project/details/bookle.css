@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+#logo{
+	width:220px;
+}
+
+[data-section="reserve"] ul > li{
+	margin-top:20px;
+}

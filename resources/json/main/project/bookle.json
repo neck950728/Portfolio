@@ -1,0 +1,29 @@
+{
+	"list":
+	[
+		{
+			"icon":"/Portfolio/resources/images/main/project/github.png",
+			"id":"github",
+			"name":"GitHub",
+			"type":"GitHub",
+			"link":"https://github.com/neck950728/Bookle",
+			"date":"2018.01"
+		},
+		{
+			"icon":"/Portfolio/resources/images/main/project/details.png",
+			"id":"details",
+			"name":"자세히 보기",
+			"type":"Details",
+			"target":"bookle",
+			"date":"2018.01"
+		},
+		{
+			"icon":"/Portfolio/resources/images/main/project/chrome.png",
+			"id":"erd",
+			"name":"ERD",
+			"type":"ERD",
+			"link":"https://www.erdcloud.com/d/QQ3z3n43HQtBdeWno",
+			"date":"2018.01"
+		}
+	]
+}

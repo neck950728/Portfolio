@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+#logo{
+	width:140px;
+}
+
+[data-section="login"] ul > li{
+	margin-top:10px;
+}
+
+[data-section="attendance"] .refer{
+	font-style:normal;
+	color:#626262;
+}
+
+[data-section="humanResourceRegistration"] ul > li{
+	margin-top:25px;
+}
+
+[data-section="attendanceList"] .refer{
+	margin-top:15px;
+}
+
+.end .space{
+	margin-top:25px;
+}

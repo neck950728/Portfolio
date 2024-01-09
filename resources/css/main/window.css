@@ -1,0 +1,637 @@
+@charset "UTF-8";
+
+.window{
+	width:1000px; height:85%;
+	position:absolute;
+	top:0px; bottom:0px; left:0px; right:0px;
+	margin:auto;
+	background-color:white;
+}
+
+/* ============================= header ============================= */
+.window > #header{
+	height:77px;
+}
+
+/* ---------------- toolbar ---------------- */
+#header > .toolbar{
+	width:100%; height:35px;
+	display:table;
+	background-color:#e5e5e5;
+}
+
+
+.toolbar > .logo{
+	display:table-cell;
+	vertical-align:middle;
+	padding-left:5px;
+}
+
+.toolbar > .logo > img{
+	width:25px;
+	vertical-align:sub;
+}
+
+.toolbar > .logo > span{
+	padding-left:5px;
+	font-size:15px;
+}
+
+
+.toolbar > .buttons{
+	display:table-cell;
+	vertical-align:middle;
+	overflow:hidden;
+}
+
+.toolbar > .buttons > ul{
+	float:right;
+	overflow:hidden;
+}
+
+.toolbar > .buttons li{
+	float:left;
+	margin:0px 5px;
+	padding:5px 10px 5px 10px;
+}
+
+.toolbar > .buttons li:not(.minimize):hover{
+	background-color:rgba(200, 200, 200, 0.4);
+}
+
+.toolbar > .buttons img{
+	vertical-align:middle;
+}
+
+
+/* Chrome */
+.toolbar > .tab{
+	display:table-cell;
+	padding-top:7px;
+	vertical-align:middle;
+}
+
+.toolbar > .tab > div{
+	width:200px; height:100%;
+	margin-left:7px;
+	padding-left:5px;
+	line-height:28px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	background-color:white;
+}
+
+.toolbar > .tab > div > img{
+	width:22px;
+	margin-right:5px;
+	vertical-align:text-top;
+}
+
+.toolbar > .tab > div > span{
+	font-size:14px;
+}
+/* ---------------------------------------- */
+
+/* ---------------------------------- navigationBar ---------------------------------- */
+#header > .navigationBar{
+	margin-top:10px;
+	overflow:hidden;
+}
+
+.navigationBar > .buttons{
+	float:left;
+	line-height:32px;
+}
+
+.navigationBar > .buttons > ul{
+	overflow:hidden;
+}
+
+.navigationBar > .buttons > ul > li{
+	float:left;
+	padding:0px 10px;
+}
+
+.navigationBar > .buttons > ul > li > img{
+	width:15px;
+	opacity:0.3;
+	filter:opacity(0.5) drop-shadow(0 0 0 gray); /* 참고 : https://haenny.tistory.com/214 */
+}
+
+.navigationBar > .buttons > ul > li.active > img{
+	opacity:1;
+}
+
+.navigationBar > .buttons > ul > li.active > img:hover{
+	filter:opacity(0.7) drop-shadow(0 0 0 black);
+}
+
+
+.navigationBar > .bar{
+	margin:0px 10px 0px 70px;
+	border:1px solid #cdcdcd;
+}
+
+.navigationBar > .bar > ul{
+	height:30px;
+	display:table;
+	padding-left:5px;
+	overflow:hidden;
+}
+
+.navigationBar > .bar > ul > li, .navigationBar > .bar > ul > i{
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.navigationBar > .bar > ul > li > img{
+	width:25px;
+	vertical-align:middle;
+}
+
+.navigationBar > .bar > ul > li span{
+	font-size:14px;
+}
+
+.navigationBar > .bar > ul > i > img{
+	width:10px; height:10px;
+	margin:0px 7px;
+}
+
+
+/* Chrome */
+.navigationBar > .addressBar{
+	margin: 0px 10px 0px 70px;
+}
+
+.navigationBar > .addressBar > input{
+	width:100%;
+	padding:7px 35px;
+	border:none;
+	border-radius:10px;
+	background-image:url("/Portfolio/resources/images/main/chrome/search.png");
+	background-repeat:no-repeat;
+	background-position:1% 50%;
+	background-size:20px 20px;
+	background-color:#f0f0f0;
+	font-size:14px;
+	outline:none;
+}
+
+.navigationBar > .addressBar > input:focus::-webkit-input-placeholder{
+	color:transparent;
+}
+/* ---------------------------------------------------------------------------------- */
+/* ================================================================ */
+
+/* =============================== body =============================== */
+.window > #body{
+	padding:20px 20px 0px 0px;
+	overflow-y:auto;
+}
+
+/* ----------------------------------- shortcuts ----------------------------------- */
+#body > .shortcuts{
+	width:200px;
+	position:fixed;
+}
+
+.shortcuts > h1{
+	margin:0px 0px 7px 10px;
+	padding-left:22px;
+	font-size:15px; font-weight:normal;
+	background:url("/Portfolio/resources/images/main/favorites.png") no-repeat 0px 50%;
+	background-size:20px;
+}
+
+.shortcuts > ul{
+	
+}
+
+.shortcuts > ul > li{
+	margin-right:15px;
+	padding:3px 0px 3px 20px;
+}
+
+.shortcuts > ul > li:hover{
+	background-color:#daf3ff;
+	cursor:pointer;
+}
+
+.shortcuts img{
+	width:18px;
+	vertical-align:bottom;
+}
+
+.shortcuts span{
+	padding-left:5px;
+	font-size:15px;
+}
+/* -------------------------------------------------------------------------------- */
+
+/* ----------------------------- content ----------------------------- */
+#body > .content{
+	margin-left:200px;
+}
+
+/* ㆍㆍㆍㆍㆍㆍㆍㆍㆍ compose directory ㆍㆍㆍㆍㆍㆍㆍㆍㆍ */
+.content.directory{
+	
+}
+
+.content.directory li{
+	font-size:14px;
+}
+
+/* header */
+.content.directory > .header{
+	margin-bottom:10px;
+	overflow:hidden;
+}
+
+.content.directory > .header > li{
+	width:220px;
+	float:left;
+	color:#4c607a;
+}
+
+/* body */
+.content.directory > .body{
+	
+}
+
+.content.directory > .body > .file{
+	margin-bottom:10px;
+	border:1px solid rgba(255, 255, 255, 0);
+}
+
+.content.directory > .body > .file.selected{
+	border:1px solid rgba(70, 155, 255, 0.3);
+	background-color:rgba(70, 155, 255, 0.3);
+}
+
+.content.directory > .body > .file:hover{
+	cursor:default;
+}
+
+.content.directory > .body > .file:not(.selected):hover{
+	background-color:#daf3ff !important;
+}
+
+.content.directory > .body > .file > ul{
+	display:table;
+}
+
+.content.directory > .body > .file > ul > li{
+	width:220px;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.content.directory > .body > .file > ul > li > img{
+	width:22px;
+	margin-right:5px;
+	vertical-align:middle;
+}
+/* ㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍ */
+
+/* ㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍ about ㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍ */
+.content#about{
+	font-size:1em;
+}
+
+.content#about > h1{
+	margin:0px;
+	color:#006fba;
+}
+
+.content#about h1{
+	font-size:20px;
+}
+
+.content#about .boundary{
+	background:url("/Portfolio/resources/images/main/border.jpg") repeat-x;
+	background-position:0px 50%;
+}
+
+.content#about .boundary > span{
+	padding-right:5px;
+	/* font-size:17px; */
+	background-color:white;
+}
+
+/* profile */
+.content#about .profile{
+	position:relative;
+	overflow:hidden;
+}
+
+.profile > div{
+	float:left;
+}
+
+.profile > div > h1{
+	margin-top:0px;
+}
+
+.profile > div > .blog{
+	margin-bottom:13px;
+}
+
+.profile > div > .blog > a{
+	text-decoration:none;
+	color:#3f3fff;
+	cursor:pointer;
+}
+
+.profile > div > .blogDescription > p{
+	margin:0px; margin-bottom:13px;
+	font-size:14px;
+	color:#8f8f8f;
+}
+
+.profile > img{
+	width:140px;
+	position:absolute;
+	right:0px;
+	border-radius:50%;
+}
+
+/* experience */
+.content#about .experience,
+.content#about .certificate{
+	
+}
+
+.experience > ul > li,
+.certificate > ul > li{
+	padding:7px 0px;
+}
+
+.experience > ul > li > h2,
+.certificate > ul > li > h2{
+	display:inline-block;
+	margin:0px;
+	font-size:1em; font-weight:normal;
+}
+
+.experience > ul > li > i,
+.certificate > ul > li > i{
+	font-style:normal;
+}
+
+/* skills */
+.content#about > .skills{
+	
+}
+
+.skills > .details{
+	margin-bottom:10px;
+}
+
+.skills > .details > span{
+	color:#3f3fff;
+	cursor:pointer;
+}
+
+.skills > .inProgress{
+	margin:0px; margin-bottom:30px;
+	color:#8f8f8f;
+}
+
+.skills > ul{
+	overflow:hidden;
+	margin-bottom:16px;
+	text-align:center;
+}
+
+.skills > ul > li{
+	display:inline-block;
+	padding:5px 35px;
+}
+
+.skills > ul > li.client_side.first{
+	margin-left:70px;
+}
+
+.skills > ul > li.client_side.last{
+	margin-right:70px;
+}
+
+.skills > ul > li.contour{
+	width:100%; height:100%;
+	padding:0px;
+}
+
+.skills > ul > li > img{
+	width:70px;
+	border-radius:22px;
+	
+	/* 참고 : https://developer.mozilla.org/ko/docs/Web/CSS/box-shadow */
+	box-shadow:0px 3px 6px rgba(0, 0, 0, 0.3),
+					 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+/* ㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍ */
+/* ------------------------------------------------------------------- */
+
+/* --------------------------------------- Chrome --------------------------------------- */
+#body > .searchBar{
+	position:absolute;
+    top:50%; left:50%;
+    transform:translate(-50%, -50%);
+    text-align:center;
+}
+
+.searchBar > img{
+	width:300px;
+	margin-bottom:40px;
+}
+
+.searchBar > input{
+	width:500px; height:45px;
+	padding-left:55px;
+	border-radius:25px;
+	border:1px solid #d4d4d4;
+	box-shadow:0px 3px 5px #d4d4d4;
+	background:url("/Portfolio/resources/images/main/chrome/search.png") no-repeat 4% 50%;
+	outline:none;
+}
+
+.searchBar > input:focus::-webkit-input-placeholder{
+	color:transparent;
+}
+/* -------------------------------------------------------------------------------------- */
+/* =================================================================== */
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1000px){
+	.window{
+		width:100% !important;
+		/* display:table !important; */ /* height:fit-content 대체(Internet Explorer : fit-content 지원 X) */
+		left:0px !important;
+	}
+}
+
+@media screen and (min-height:641px) and (max-height:918px){
+	.window{
+		height:95% !important;
+	}
+}
+
+@media screen and (max-height:640px){
+	.window{
+		height:auto !important;
+		top:0px !important;
+	}
+}
+
+@media screen and (max-width:1000px) and (max-height:640px){
+	.window{
+		width:auto !important; height:auto !important;
+		display:block !important;
+		top:0px !important; left:0px !important;
+		overflow:auto;
+	}
+}
+
+/* about */
+@media screen and (max-width:940px){
+	.window.about .skills > ul{
+		text-align:inherit;
+	}
+	
+	.window.about .skills > ul > li{
+		padding:10px 35px;
+	}
+	
+	.window.about .skills > ul > li.first{
+		margin-left:0px;
+	}
+	
+	.window.about .skills > ul > li.last{
+		margin-right:0px;
+	}
+	
+	.window.about .skills > ul > li.contour{
+		display:none;
+	}
+}
+
+@media screen and (max-width:840px){
+	.window.about .experience > ul > li:first-child{
+		margin-bottom:7px;
+	}
+	
+	.window.about .experience > ul > li > i{
+		display:none;
+	}
+	
+	.window.about .experience > ul > li > span{
+		display:block;
+		margin:7px 0px 0px 30px;
+	}
+}
+
+@media screen and (max-width:719px){
+	.window.about .content .profile img{
+		width:120px;
+	}
+}
+
+@media screen and (max-width:656px){
+	.window.about .content .skills img{
+		width:55px;
+	}
+}
+
+@media screen and (max-width:611px){
+	.window.about .shortcuts{
+		display:none;
+	}
+	
+	.window.about .content{
+		margin-left:70px !important;
+	}
+}
+
+@media screen and (max-width:465px){
+	.window.about .content{
+		margin-left:10px !important;
+	}	
+}
+
+@media screen and (max-width:405px){
+	.window.about .content .skills li{
+		padding:15px 20px;
+	}
+}
+
+@media screen and (max-width:397px){
+	.window.about .content{
+		font-size:0.9em !important;
+	}
+	
+	.window.about .content h1{
+		font-size:18px !important;
+	}
+}
+
+/* directory */
+@media screen and (max-width:880px){
+	.window .directory .type{
+		width:auto !important;
+	}
+}
+
+@media screen and (max-width:750px){
+	.window .directory .type{
+		display:none !important;
+	}
+}
+
+@media screen and (max-width:660px){
+	.window .directory .date{
+		width:auto !important;
+	}
+}
+
+@media screen and (max-width:590px){
+	.window .directory .date{
+		display:none !important;
+	}
+}
+
+@media screen and (max-width:400px){
+	.window .shortcuts{
+		display:none;
+	}
+	
+	.window .directory{
+		margin-left:70px !important;
+	}
+}
+
+/* Chrome */
+@media screen and (max-width:500px){
+	.window.chrome > #body > .searchBar{
+		width:100%;
+	}
+	
+	.window.chrome > #body > .searchBar > input{
+		width:100%;
+	}
+}
+
+@media screen and (max-width:350px){
+	.window.chrome > #header > .toolbar > .tab > div{
+		width:130px;
+	}
+}

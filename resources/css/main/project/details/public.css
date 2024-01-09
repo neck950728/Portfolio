@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+.videoWrap, .imgWrap{
+	text-align:center;
+	margin-bottom:15px;
+}
+
+.videoWrap > video,
+.imgWrap > img{
+	border:1px solid #d9d9d9;
+}
+
+.imgWrap > img{
+	cursor:pointer;
+}
+
+
+
+
+.bold{
+	font-weight:bold;
+}
+
+.emphasis{
+	border-radius:10px;
+	background-color:#ebebff;
+}
+
+.refer{
+	font-style:italic;
+	color:#9b9b9b;
+}
+
+.pxUp p{
+	font-size:16px !important;
+}
+
+.space{
+	margin-top:15px;
+}
+
+
+
+
+.section p{
+	margin:0px;
+	margin-top:7px;
+	text-align:left;
+	font-size:15px;
+}
+
+.section ul{
+	margin-left:25px;
+	text-align:left;
+	list-style:disc;
+}
+
+.section ul > li{
+	margin-top:15px;
+}
+
+
+.section.start p{
+	font-size:16px;
+}
+
+
+.section > .videoWrap ~ div > p:first-of-type{
+	font-size:16px;
+}
+
+
+.section.end > .center{
+	top:10%;
+	transform:translate(-50%, 0%);
+}
+
+.section.end img{
+	width:100px;
+}
+
+.section.end p{
+	text-align:left;
+}
+
+.section.end p:first-of-type{
+	font-size:16px;
+}
+
+
+
+
+.simpleList > div{
+	margin-top:20px;
+}
+
+.simpleList ul{
+	margin-left:0px;
+	list-style:none;
+}
+
+.simpleList ul > li{
+	margin-top:0px;
+}
+
+
+
+
+/* https://stackoverflow.com/questions/4098195 참고 */
+.nestedCounters,
+.nestedCounters ul{
+	counter-reset:item;
+	margin-left:20px;
+}
+
+.nestedCounters li{
+	display:block;
+}
+
+.nestedCounters li:before{
+	content:counters(item, ".") ". ";
+	counter-increment:item;
+}
+
+
+.nestedCounters{
+	margin-left:0px !important;
+}
+
+.nestedCounters > li:not(:first-of-type){
+	margin-top:35px;
+}
+
+.nestedCounters ul > li:first-of-type{
+	margin-top:0px;
+}
+
+.nestedCounters li > p:first-of-type{
+	display:inline-block;
+}
+
+.nestedCounters ul > li > p:not(:first-of-type){
+	margin-left:30.27px;
+}
+
+
+
+
+.section:has(.center){
+	position:relative;
+}
+
+.center{
+	width:max-content;
+	position:absolute;
+	left:50%; top:50%;
+	transform:translate(-50%, -50%);
+	text-align:center;
+}
+
+.center > img{
+	display:inline-block;
+	margin-bottom:10px;
+}
+
+.center p{
+	margin:0px; margin-top:10px;
+	text-align:center;
+}
+
+
+
+
+/* Slick Slider 버튼 깨짐 방지 */
+.slick-prev:before{
+	content:"←" !important;
+}
+
+.slick-next:before{
+	content:"→" !important;
+}
+
+.slick-dots li button:before{
+	content:"•" !important;
+}
