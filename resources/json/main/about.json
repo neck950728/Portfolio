@@ -1,0 +1,73 @@
+{
+	"experience":
+	[
+		{
+			"period":"구디아카데미(2023.05.22 ~ 2023.11.21)",
+			"process":"(K-DT)클라우드 활용 자바 개발자 양성 과정 이수"
+		},
+		{
+			"period":"KG아이티뱅크(2017.12.11 ~ 2018.05.08)",
+			"process":"자바SW 개발자 양성 과정 이수"
+		},
+		{
+			"period":"KG아이티뱅크(2017.08 ~ 2017.12)",
+			"process":"Java, JSP, Spring Framework, Linux 기초 과정 이수"
+		},
+		{
+			"period":"Microsoft TIPS Programming(2014.04 ~ 2014.06)",
+			"process":"C, C++, MFC 기초 과정 이수"
+		}
+	],
+	
+	"skills":
+	{
+		"client_side":
+		[
+			{
+				"icon":"/Portfolio/resources/images/main/about/HTML.png"
+			},
+			{
+				"icon":"/Portfolio/resources/images/main/about/CSS.png"
+			},
+			{
+				"icon":"/Portfolio/resources/images/main/about/JavaScript.png"
+			},
+			{
+				"icon":"/Portfolio/resources/images/main/about/jQuery.png"
+			}
+		],
+		
+		"server_side":
+		[
+			{
+				"icon":"/Portfolio/resources/images/main/about/Java.png"
+			},
+			{
+				"icon":"/Portfolio/resources/images/main/about/JSP.png"
+			},
+			{
+				"icon":"/Portfolio/resources/images/main/about/Spring.png"
+			},
+			{
+				"icon":"/Portfolio/resources/images/main/about/MySQL.png"
+			},
+			{
+				"icon":"/Portfolio/resources/images/main/about/Oracle.png"
+			}
+		]
+	},
+	
+	"certificate":
+	[
+		{
+			"name":"네트워크관리사2급",
+			"acquisition_date":"2020.05",
+			"institution":"한국정보통신자격협회"
+		},
+		{
+			"name":"컴퓨터활용능력1급",
+			"acquisition_date":"2018.08",
+			"institution":"대한상공회의소"
+		}
+	]
+}

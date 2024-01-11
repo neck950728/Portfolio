@@ -1,0 +1,17 @@
+{
+	"list":
+	[
+		{
+			"icon":"/Portfolio/resources/images/main/about/about.ico",
+			"name":"About"
+		},
+		{
+			"icon":"/Portfolio/resources/images/main/project/project.ico",
+			"name":"Project"
+		},
+		{
+			"icon":"/Portfolio/resources/images/main/contact/contact.ico",
+			"name":"Contact"
+		}
+	]
+}

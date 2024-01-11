@@ -1,0 +1,128 @@
+<link rel="stylesheet" href="/Portfolio/resources/css/main/project/details/public.css" class="destroy">
+<link rel="stylesheet" href="/Portfolio/resources/css/main/project/details/sulDamAh.css" class="destroy">
+
+<div id="detailsBackground">
+	<div id="detailsViewer">
+		<div id="title">
+			<img src="/Portfolio/resources/images/main/project/details.png"> 자세히 보기
+			<img src="/Portfolio/resources/images/main/project/details/close-icon.png" id="close">
+		</div>
+		<div class="slider">
+			<div class="section start">
+				<div class="center">
+					<img src="/Portfolio/resources/images/main/project/details/sulDamAh/logo.png" id="logo">
+					<div>
+						<p>
+							&#128516; 안녕하세요!
+							<i class="emphasis">'자세히 보기'</i>란 제 담당 역할에 대한 기능 설명과
+						</p>
+						<p>프로젝트를 진행하면서 느낀점을 전달해드리기 위한 문서입니다! &#128195;</p>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/sulDamAh/1.mp4"></video>
+				</div>
+				<div class="pxUp">
+					<p>&#129534; 먼저 <i class="emphasis">'주문'</i> 페이지입니다.</p>
+					<p>사용자가 주문 페이지 내에서 기본 배송지 외 다른 배송지도 관리할 수 있도록</p>
+					<p>AJAX 통신을 활용하여 해당 기능을 구현해보았습니다.</p>
+				</div>
+			</div>
+			<div class="section">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/sulDamAh/2.mp4"></video>
+				</div>
+				<div>
+					<p>&#128179; <i class="emphasis">'결제'</i> 기능입니다.</p>
+					<p>많이 부족하지만, 가장 민감한 부분이므로 다른 부분보다 더욱 신경을 쓰려고 노력했습니다.</p>
+					<p class="refer">다음과 같이 결제하는 과정에서 악의적인 사용자의 데이터 조작 행위를 방지하고자 하였습니다.</p>
+					<ul class="nestedCounters">
+						<li>
+							<p><i class="emphasis">결제 금액 검증</i></p>
+							<ul>
+								<li>
+									<p>'바로 구매' 혹은 '장바구니 페이지'에서 주문 페이지로 넘어오는 과정에</p>
+									<p>사용자가 고른 상품 정보(고유번호 및 수량)를 세션에 보관해둡니다.</p>
+								</li>
+								<li>
+									<p>결제를 처리하는 과정에 먼저 포트원 API로 결제 내역 조회를 요청하여</p>
+									<p>사용자가 실제로 결제한 금액을 응답받습니다.</p>
+								</li>
+								<li>
+									<p>이후 세션에 보관해두었던 상품 정보를 꺼내 금액을 계산하여</p>
+									<p>사용자가 실제로 결제한 금액과 일치하는지 검증하는 과정을 추가하였습니다.</p>
+								</li>
+							</ul>	
+						</li>
+						<li>
+							<p><i class="emphasis">포인트 검증</i></p>
+							<ul>
+								<li>
+									<p>추가로 결제 금액이 아닌 포인트를 조작할 수도 있으므로 포인트 또한</p>
+									<p>결제를 처리하는 과정에 사용자가 현재 보유하고 있는 포인트보다</p>
+									<p>많은 양의 포인트를 사용하려고 시도하지는 않는지 검증하는 과정도 추가하였습니다.</p>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="section" data-section="cancel">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/sulDamAh/3.mp4"></video>
+				</div>
+				<div>
+					<p>&#10060; 다음 <i class="emphasis">'주문 취소'</i> 페이지입니다.</p>
+					<p>전체 취소 같은 경우에는 단순히 요청만 하면 돼서 큰 어려움이 없었지만,</p>
+					<p>개별 취소 같은 경우에는 고생을 좀 했던 기억이 있습니다.</p>
+					<p>API 문서를 다시 자세히 읽어보니, 'checksum'이라는 데이터의 무결성을 검증하기 위한</p>
+					<p>파라미터를 추가적으로 담아 보내야 한다는 것을 파악할 수 있었고,</p>
+					<p>그렇게 checksum 파라미터에 앞으로 취소 가능한 금액을 담아 보냄으로써</p>
+					<p>문제를 해결할 수 있었습니다.</p>
+					<div class="refer">
+						<p>환불 방식은 아래와 같습니다.</p>
+						<ul>
+							<li><p>현금 우선 환불</p></li>
+							<li><p>취소할 상품이 더 존재할 경우, 배송비는 환불해주지 않고 보류</p></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="imgWrap">
+					<img src="/Portfolio/resources/images/main/project/details/sulDamAh/monthlySales.png" width="100%"
+							onclick="location.href='/Portfolio/resources/images/main/project/details/sulDamAh/monthlySales.png'">
+				</div>
+				<div class="pxUp">
+					<p>&#128202; 마지막 관리자 페이지의 <i class="emphasis">'월별 매출'</i>입니다.</p>
+					<p>저는 2023년도의 월별 매출만 차트화하여 틀만 잡아놓았고,</p>
+					<p>나머지 기능은 팀원분께서 추가하셨습니다.</p>
+				</div>
+			</div>
+			<div class="section end">
+				<div class="center">
+					<img src="/Portfolio/resources/images/main/project/details/end.jpeg">
+					<div>
+						<p>&#128591; <i class="emphasis">마치며</i></p>
+						<p>쇼핑몰이라는 주제의 프로젝트는 이전에도 몇 번 경험이 있었습니다.</p>
+						<p>하지만 항상 게시판, 상품 관리 등과 같은 기능들을 위주로 개발을 했었지,</p>
+						<p>결제 기능은 단 한 번도 구현해본 적이 없었습니다.</p>
+						<p>그래서 이번 기회에 경험해보고자 자진하여 결제 파트를 담당하게 되었습니다.</p>
+						<p>물론 테스트 연동인 만큼, 결제 시스템의 극히 일부분을 경험해봤을 뿐이고,</p>
+						<p>제 나름대로 고민하여 구현한 결제 처리 방식이 많이 미숙하다 생각하지만,</p>
+						<p>기본적인 결제 프로세스를 경험해볼 수 있었다는 것만으로도</p>
+						<p>충분히 의미 있는 경험이었습니다.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div style="display:none;" class="destroy">
+	<script type="text/javascript">
+		detailsCommonScript();
+	</script>
+</div>

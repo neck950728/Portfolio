@@ -1,0 +1,237 @@
+<link rel="stylesheet" href="/Portfolio/resources/css/main/project/details/public.css" class="destroy">
+<link rel="stylesheet" href="/Portfolio/resources/css/main/project/details/seongho.css" class="destroy">
+
+<div id="detailsBackground">
+	<div id="detailsViewer">
+		<div id="title">
+			<img src="/Portfolio/resources/images/main/project/details.png"> 자세히 보기
+			<img src="/Portfolio/resources/images/main/project/details/close-icon.png" id="close">
+		</div>
+		<div class="slider">
+			<div class="section start">
+				<div class="center">
+					<img src="/Portfolio/resources/images/main/project/details/seongho/logo.png" id="logo">
+					<div>
+						<p>
+							&#128516; 안녕하세요!
+							<i class="emphasis">'자세히 보기'</i>란 제 담당 역할에 대한 기능 설명과
+						</p>
+						<p>프로젝트를 진행하면서 느낀점을 전달해드리기 위한 문서입니다! &#128195;</p>
+					</div>
+				</div>
+			</div>
+			<div class="section" data-section="login">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/seongho/1.mp4"></video>
+				</div>
+				<div>
+					<p>&#128273; 먼저 <i class="emphasis">'로그인'</i> 페이지입니다.</p>
+					<ul>
+						<li><p>비밀번호 찾기 : 사번 입력 시 등록된 이메일로 임시 비밀번호를 발급받을 수 있습니다.</p></li>
+						<li><p>로그인 : Spring Security 'Form Login' 인증 방식을 사용하였습니다.</p></li>
+						<li><p>로그인 유지 : Spring Security 'Remember-Me' 기능을 활용하여 구현하였습니다.</p></li>
+					</ul>
+				</div>
+			</div>
+			<div class="section" data-section="attendance">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/seongho/2.mp4"></video>
+				</div>
+				<div>
+					<p>&#128197; <i class="emphasis">'근태 관리'</i> 페이지입니다.</p>
+					<ul class="nestedCounters">
+						<li>
+							<p><i class="emphasis">출퇴근</i></p>
+							<ul>
+								<li>
+									<p>메인 페이지 또는 근태 관리 페이지에서 출퇴근(서버 시간 기준)을 할 수 있습니다.</p>
+								</li>
+							</ul>	
+						</li>
+						<li>
+							<p><i class="emphasis">주차별 통계</i></p>
+							<ul>
+								<li>
+									<p>Calendar 클래스를 활용하여 주차별로 구분하였습니다.</p>
+									<p class="refer">- 첫 주가 4일 이상을 포함하고 있으면 해당 달의 첫 주로, 그렇지 않으면</p>
+									<p class="refer">&nbsp; 전 달의 마지막 주로 구분하였습니다.</p>
+									<!-- <p class="refer">- 각종 시간 계산은 JavaScript로 처리하였습니다.</p> -->
+								</li>
+								<li>
+									<p>근무 시간이 3시간 이상인 경우, 점심시간(최대 1시간)은 제외되도록 하였습니다.</p>
+									<p class="refer">- 총 근무 시간 3시간 40분 : 40분 제외</p>
+									<p class="refer">- 총 근무 시간 4시간 이상 : 1시간 제외</p>
+								</li>
+								<li>
+									<p>기본/연장/야간은 아래와 같이 구분하였습니다.</p>
+									<p class="refer">- 기본 : 8시간</p>
+									<p class="refer">- 연장 : 기본 근무 시간(8시간)을 초과한 시점부터 적용</p>
+									<p class="refer">- 야간 : 4시간 이상 연장한 시점부터 적용</p>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="section">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/seongho/3.mp4"></video>
+				</div>
+				<div class="simpleList">
+					<p>👩‍💼 <i class="emphasis">'인사 관리'</i> 페이지입니다.</p>
+					<div>
+						<p class="bold">내 인사 정보</p>
+						<ul>
+							<li><p>- 자신의 인사 정보를 확인할 수 있습니다.</p></li>
+							<li><p>- 수정은 불가능합니다.</p></li>
+						</ul>
+					</div>
+					<div>
+						<p class="bold">내 연차 현황</p>
+						<ul>
+							<li><p>- 가입 날짜부터 현재까지 자신의 연도별 연차 현황을 확인할 수 있습니다.</p></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="section" data-section="humanResourceRegistration">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/seongho/4.mp4"></video>
+				</div>
+				<div>
+					<p>👨‍✈️&#128221; <i class="emphasis">'인사 등록'</i> 페이지입니다.</p>
+					<ul>
+						<li>
+							<p>Spring Validation을 활용하여 간단한 유효성 검사를 적용하였습니다.</p>
+						</li>
+						<li>
+							<p>프로필 사진은 파일 업로드 방식이 아닌 Base64 형식으로 인코딩하여</p>
+							<p>저장하는 방식을 사용하였습니다.</p>
+						</li>
+						<li>
+							<p>부서 및 직급은 커스텀 모달창을 통해 유효한 부서 및 직급만 입력할 수 있도록</p>
+							<p>처리하였습니다.</p>
+							<p class="refer">AJAX 통신으로 DB에서 부서 및 직급 리스트를 불러와 커스텀 모달창에 표시합니다.</p>
+						</li>
+						<li>
+							<p>등록 시 입력한 이메일로 사번과 임시 비밀번호를 발급합니다.</p>
+							<p class="refer">- 사번 : 입사 연도 + 시퀀스 3자</p>
+							<p class="refer">- 비밀번호 : 소문자, 숫자 조합 8자</p>
+						</li>
+						<li>
+							<p>최초 로그인 시 Spring Security 권한 및 AccessDeniedHandler 구현을 통해</p>
+							<p>비밀번호를 변경하기 전까지는 다른 서비스를 이용할 수 없도록 처리하였습니다.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="section">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/seongho/5.mp4"></video>
+				</div>
+				<div>
+					<p>👨‍✈️&#128269; <i class="emphasis">'인사 조회'</i> 페이지입니다.</p>
+					<p>전사원의 인사 정보를 확인 및 수정할 수 있습니다.</p>
+					<ul>
+						<li><p>조건별 검색을 할 수 있으며, 페이징 처리를 하였습니다.</p></li>
+						<li><p>전사원의 인사 정보를 Excel로 다운로드받아 볼 수 있습니다.</p></li>
+						<li>
+							<p>특정 사원의 인사 정보 및 권한을 수정할 수 있습니다.</p>
+							<p class="refer">자신의 인사 정보 수정 시 Spring Security 인증 정보를 갱신하여 재로그인을 하지 않아도</p>
+							<p class="refer">즉시 갱신된 정보를 확인할 수 있습니다.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="section">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/seongho/6.mp4"></video>
+				</div>
+				<div class="simpleList">
+					<p>👨‍✈️&#128203; <i class="emphasis">'발령 등록/조회'</i> 페이지입니다.</p>
+					<div>
+						<p class="bold">등록</p>
+						<ul>
+							<li><p>- 마찬가지로, 커스텀 모달창을 통해 유효한 입력만 가능하도록 처리하였습니다.</p></li>
+						</ul>
+					</div>
+					<div>
+						<p class="bold">조회</p>
+						<ul>
+							<li><p>- 등록된 발령 정보를 수정 및 삭제할 수 있습니다.</p></li>
+							<li><p>- 조건별 검색 및 페이징 처리를 하였습니다.</p></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="section" data-section="attendanceList">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/seongho/7.mp4"></video>
+				</div>
+				<div>
+					<p>👨‍✈️&#128269; <i class="emphasis">'근태 현황'</i> 페이지입니다.</p>
+					<p>전사원의 근태 현황을 확인할 수 있습니다.</p>
+					<ul>
+						<li><p>기본적으로 요약된 주차별 통계가 표시됩니다.</p></li>
+						<li><p>특정 사원 선택 시 해당 사원의 상세한 근태 현황을 확인할 수 있습니다.</p></li>
+						<li><p>역시, 조건별 검색이 가능합니다.</p></li>
+					</ul>
+					<!-- 
+						<div class="refer">
+							<p>다양한 방법을 시도해보고 싶어, 이번에는 시간 계산을 JavaScript로 처리하지 않고,</p>
+							<p>DB 함수 및 쿼리를 작성하여 전체 및 주차별 통계를 구한 후,</p>
+							<p>사원별로 분류하는 작업은 Java로 처리하였습니다.</p>
+						</div>
+					 -->
+				</div>
+			</div>
+			<div class="section">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/seongho/8.mp4"></video>
+				</div>
+				<div>
+					<p>👨‍✈️&#128197; 마지막 <i class="emphasis">'연차 현황'</i> 페이지입니다.</p>
+					<p>전사원의 연차 현황을 확인 및 조정할 수 있습니다.</p>
+					<ul>
+						<li>
+							<p>특정 사원만 선택하거나 다수를 선택하여 커스텀 모달창을 통해 연차를 조정할 수 있습니다.</p>
+							<p class="refer">적용 버튼 클릭 시 AJAX 통신으로 즉시 반영되며,</p>
+							<p class="refer">새로고침을 하지 않아도 조정된 연차 정보로 표시됩니다.</p>
+						</li>
+						<li>
+							<p>역시, 조건별 검색 및 페이징 처리를 하였으며,</p>
+							<p>전사원의 연차 정보를 Excel로 다운로드받아 볼 수 있습니다.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="section end">
+				<div class="center">
+					<img src="/Portfolio/resources/images/main/project/details/end.jpeg">
+					<div>
+						<p>&#128591; <i class="emphasis">마치며</i></p>
+						<p>이전에 학습했던 Spring Boot의 기본적인 설정 방법과 인증, 권한에 따른 접근 제어 등</p>
+						<p>Security의 기본 개념을 복습하는 차원에서는 많은 도움이 되었지만,</p>
+						<p>프로젝트 전반적으로 봤을 땐 개인적으로 아쉬움이 남았던 프로젝트입니다.</p>
+						<p>그중에서도 가장 아쉬움이 남았던 부분은 커뮤니케이션의 부재였는데,</p>
+						<p>구체적인 의사소통 없이 각자의 개발에만 집중하다 보니</p>
+						<p>추후 기능을 통합하는 과정에서 새로운 테이블을 추가해야 하거나</p>
+						<p>아예 구조를 변경해야 하는 등의 문제가 발생하였습니다.</p>
+						<p>하지만 시간적 여유가 없었고, 결국 프로젝트는 담당 파트 간에 상호작용을 하여</p>
+						<p>연동되는 기능은 없이 어중간하게 마무리되었습니다.</p>
+						<div class="space"></div>
+						<p>해당 프로젝트를 통해 개발자에게 있어 개발 실력도 중요하지만,</p>
+						<p>효율적인 협업을 위해 구체적인 의사소통으로 목표를 명확히 공유하는 것 또한</p>
+						<p>개발자의 역량 중 하나라는 것을 몸소 깨닫는 계기가 되었습니다.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div style="display:none;" class="destroy">
+	<script type="text/javascript">
+		detailsCommonScript();
+	</script>
+</div>

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+#login > img{
+	width:200px;
+}
+
+#login > h1{
+	font-size:35px;
+}
+
+#login > button{
+	width:135px;
+}
+
+#login > button > span{
+	line-height:40px;
+}

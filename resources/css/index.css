@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+*{ box-sizing:border-box; }
+
+#container{
+	height:100vh;
+	min-height:450px;
+	background-image:url("/Portfolio/resources/images/index/background.jpg");
+	background-size:cover;
+}
+
+
+#login{
+	position:absolute;
+	top:50%; left:50%;
+	transform:translate(-50%, -50%);
+	text-align:center;
+}
+
+#login > img{
+	width:250px;
+	border-radius:300px;
+	opacity:0.6;
+}
+
+#login > h1{
+	text-align:center;
+	font-size:40px;
+	color:#cccccc;
+}
+
+#login > button{
+	width:155px;
+	padding:2px;
+	text-align:center;
+	border:1px solid white;
+	background-color:gray;
+	opacity:0.8;
+}
+
+#login > button:hover{
+	opacity:1;
+}
+
+#login > button > span{
+	display:block;
+	line-height:45px;
+	color:white;
+}

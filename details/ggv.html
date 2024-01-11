@@ -1,0 +1,262 @@
+<link rel="stylesheet" href="/Portfolio/resources/css/main/project/details/public.css" class="destroy">
+<link rel="stylesheet" href="/Portfolio/resources/css/main/project/details/ggv.css" class="destroy">
+
+<div id="detailsBackground">
+	<div id="detailsViewer">
+		<div id="title">
+			<img src="/Portfolio/resources/images/main/project/details.png"> 자세히 보기
+			<img src="/Portfolio/resources/images/main/project/details/close-icon.png" id="close">
+		</div>
+		<div class="slider">
+			<div class="section start">
+				<div class="center">
+					<img src="/Portfolio/resources/images/main/project/details/ggv/logo.png" id="logo">
+					<div>
+						<p>
+							&#128516; 안녕하세요!
+							<i class="emphasis">'자세히 보기'</i>란 제 담당 역할에 대한 기능 설명과
+						</p>
+						<p>프로젝트를 진행하면서 느낀점을 전달해드리기 위한 문서입니다! &#128195;</p>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/ggv/1.mp4"></video>
+				</div>
+				<div>
+					<p>&#127968; 먼저 <i class="emphasis">'메인'</i> 페이지입니다.</p>
+					<ul>
+						<li>
+							<p>화면 중앙에는 슬라이드 배너와 랜덤으로 하나의 영화를 추천하는 Movie Selection으로</p>
+							<p>구성하였습니다.</p>
+						</li>
+						<li><p>헤더의 검색창을 통해 원하는 영화를 빠르게 찾아볼 수 있습니다.</p></li>
+						<li><p>우측의 스크롤 배너는 JavaScript로 스크롤바 및 배너 위치를 계산하여 구현해보았습니다.</p></li>
+						<li>
+							<p>사용자가 주소창을 통해 직접 URL을 입력하여 특정 로직을 실행하는 행위를</p>
+							<p>방지하고자 하였습니다.</p>
+							<p class="refer">주소창을 통해 요청할 경우, Request Header의 Referer 값이 null인 점을 이용하여</p>
+							<p class="refer">인터셉터를 통해 Referer 값을 확인하였을 때, null이면 더 이상 진행하지 않고</p>
+							<p class="refer">메인 페이지로 강제 리다이렉트되도록 처리하였습니다.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="section" data-section="join">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/ggv/2.mp4"></video>
+				</div>
+				<div>
+					<p>&#128221; <i class="emphasis">'회원가입'</i> 페이지입니다.</p>
+					<ul>
+						<li><p>사용자의 편의성을 위해 JavaScript로 각종 유효성 검사를 적용하였습니다.</p></li>
+						<li><p>비밀번호는 BCryptPasswordEncoder 클래스를 통해 암호화되어 저장됩니다.</p></li>
+						<li>
+							<p>AJAX 통신으로 아이디 중복 검사를 처리하였으며, 가입을 진행하는 순간에</p>
+							<p>다른 사용자가 동일한 아이디로 가입을 하는 상황이 발생할 수 있으므로</p>
+							<p>'가입하기' 버튼을 눌렀을 때 내부적으로 한 번 더 중복 검사를 합니다.</p>
+						</li>
+						<li>
+							<p>이메일 인증을 완료하기 전까지는 회원의 정보를 임시 회원 테이블에 보관해둡니다.</p>
+							<p class="refer">- 인증 방식은 사용자가 이메일로 받은 '인증' 버튼을 클릭하였을 때</p>
+							<p class="refer">&nbsp; 요청 URL 파라미터로 넘어온 인증키 값과 임시 회원 테이블에 저장되어 있는</p>
+							<p class="refer">&nbsp; 인증키 값이 일치하는지를 비교하는 방식입니다.</p>
+							<div class="space"></div>
+							<p class="refer">- 임시 회원 테이블은 DB 프로시저 및 스케줄러를 활용하여 5분 간격으로 1시간 이내에</p>
+							<p class="refer">&nbsp; 이메일 인증을 하지 않은 회원들의 정보가 임시 회원 테이블에서 제거되도록</p>
+							<p class="refer">&nbsp; 처리하였습니다.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="section">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/ggv/3.mp4"></video>
+				</div>
+				<div>
+					<p>&#128273; <i class="emphasis">'로그인'</i> 페이지입니다.</p>
+					<ul>
+						<li><p>등록된 휴대폰 또는 이메일을 통해 아이디와 비밀번호를 찾을 수 있습니다.</p></li>
+						<li>
+							<p>보안을 위해 사용자가 정보를 잘못 입력한 경우,</p>
+							<p>"아이디가 잘못되었습니다." 혹은 "비밀번호가 잘못되었습니다."와 같이</p>
+							<p>명확하게 알려주기보다는 "아이디 또는 비밀번호가 일치하지 않습니다."라는 식으로</p>
+							<p>모호하게 알려줍니다.</p>
+						</li>
+						<li>
+							<p>사용자가 로그인이 필요한 서비스를 이용할 때, 인터셉터를 통해 로그인 관련 세션 정보를</p>
+							<p>확인하여 세션 정보가 없으면 로그인 폼으로 리다이렉트되도록 처리하였습니다.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="section">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/ggv/4.mp4"></video>
+				</div>
+				<div>
+					<p>&#127916; <i class="emphasis">'무비차트'</i> 페이지입니다.</p>
+					<ul>
+						<li><p>개봉일이 과거/현재인 경우 '상영작'으로, 미래인 경우 '상영 예정작'으로 구분됩니다.</p></li>
+						<li><p>좌측 상단부터 예매율이 높은 순으로 표시됩니다.</p></li>
+						<li><p>상영 정보가 존재하는 영화는 '예매' 버튼이 표시됩니다.</p></li>
+						<li><p>여러 영화의 위시리스트(찜) 개수를 한눈에 볼 수 있습니다.</p></li>
+					</ul>
+				</div>
+			</div>
+			<div class="section">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/ggv/5.mp4"></video>
+				</div>
+				<div>
+					<p>&#128269; <i class="emphasis">'영화 상세'</i> 페이지입니다.</p>
+					<ul>
+						<li><p>영화의 기본 정보, 트레일러, 스틸컷, 감독/출연 정보를 확인할 수 있습니다.</p></li>
+						<li>
+							<p>평점/리뷰를 작성할 수 있으며, 등록된 전체 평점/리뷰를 기반으로</p>
+							<p>점수 분포 및 남녀별/연령별 참여율이 표시됩니다.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="section">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/ggv/6.mp4"></video>
+				</div>
+				<div>
+					<p>&#128250; <i class="emphasis">'트레일러'</i> 페이지입니다.</p>
+					<p>모든 영화의 트레일러를 한눈에 볼 수 있습니다.</p>
+					<p class="refer">페이징 기능은 AJAX 통신 및 JavaScript로 처리하여, 페이지 번호 클릭 시</p>
+					<p class="refer">리다이렉트되지 않고 HD Trailer 영역의 콘텐츠만 동적으로 갱신됩니다.</p>
+				</div>
+			</div>
+			<div class="section">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/ggv/7.mp4"></video>
+				</div>
+				<div>
+					<p>&#127915; <i class="emphasis">'예매'</i> 페이지입니다.</p>
+					<ul>
+						<li>
+							<p>마찬가지로, 예매를 진행하는 순간에 다른 사용자가 같은 좌석을 예매하는 상황이</p>
+							<p>발생할 수 있으므로 '결제 선택' 버튼을 눌렀을 때 내부적으로</p>
+							<p>한 번 더 해당 좌석이 비어 있는지를 확인합니다.</p>
+						</li>
+						<li>
+							<p>AOP를 활용하여 예매율과 관련된 로직이 실행될 때마다, 모든 영화의 예매율이</p>
+							<p>갱신되도록 처리하였습니다.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="section">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/ggv/8.mp4"></video>
+				</div>
+				<div>
+					<p>&#127871; <i class="emphasis">'컬처'</i> 페이지입니다.</p>
+					<p>단일 상품을 바로 구매할 수 있으며,</p>
+					<p>장바구니를 통해 여러 상품을 한 번에 구매할 수 있습니다.</p>
+				</div>
+			</div>
+			<div class="section" data-section="myPage">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/ggv/9.mp4"></video>
+				</div>
+				<div>
+					<p>&#129489; <i class="emphasis">'마이페이지'</i>입니다.</p>
+					<p>회원 정보를 수정할 수 있으며,</p>
+					<p>위시리스트, 내가 본 영화, 예매 내역, 구매 내역을 확인할 수 있습니다.</p>
+					<div class="space"></div>
+					<p class="refer bold">'내가 본 영화'는 예매한 영화 중 상영이 시작된 영화를 의미합니다.</p>
+					<p class="refer">DB 프로시저 및 스케줄러를 활용하여 일정 간격마다 과거 상영 정보인지를 확인하고,</p>
+					<p class="refer">맞다면 해당 상영 정보를 제거해서 더 이상 예매를 하지 못하도록 합니다.</p>
+					<p class="refer">그리고 해당 영화를 예매한 사용자들의 예매 내역을 내가 본 영화로 전환되도록 처리하였습니다.</p>
+				</div>
+			</div>
+			<div class="section" data-section="helpCenter">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/ggv/10.mp4"></video>
+				</div>
+				<div>
+					<p>&#128222; <i class="emphasis">'고객센터'</i> 페이지입니다.</p>
+					<ul>
+						<li>
+							<p>'메인'은 모든 회원이 게시글을 작성하고 볼 수 있는 일반 게시판 형식이며,</p>
+							<p>'1:1 문의'는 게시글을 작성한 회원과 관리자만 볼 수 있습니다.</p>
+						</li>
+						<li><p>댓글은 관리자만 작성할 수 있습니다.</p></li>
+						<li><p>조회수는 한 회원당 최초 한 번만 증가하도록 처리하였습니다.</p></li>
+						<li>
+							<p>Lucy XSS Servlet Filter 라이브러리를 활용하여 고객센터 작성/수정 시</p>
+							<p>XSS 공격에 대비하도록 처리하였습니다.</p>
+						</li>
+						<li>
+							<p>Summernote 라이브러리는 사용자가 이미지 파일을 선택하는 시점에</p>
+							<p>파일 업로드 처리를 해주어야 하므로,</p>
+							<p>게시글 작성을 완료하지 않더라도 해당 이미지는 이미 서버에 업로드된 상태입니다.</p>
+							<p>그래서 업로드한 이미지가 더 이상 필요하지 않게 될 경우, 각 상황에 알맞게</p>
+							<p>업로드하였던 이미지가 제거되도록 처리하였습니다.</p>
+							<div class="space"></div>
+							<p class="refer bold">작성/수정</p>
+							<p class="refer">사용자가 게시글 작성을 완료하지 않고 중간에 페이지를 벗어나려고 할 경우,</p>
+							<p class="refer">작성 과정에서 선택(업로드)한 이미지가 제거되도록 처리하였습니다.</p>
+							<p class="refer">또한, 이미지를 선택했다가 다시 지우거나 수정의 경우에는 기존 이미지를</p>
+							<p class="refer">지울 수도 있으므로, 작성 완료 시 최종적으로 실제 필요한 이미지 외</p>
+							<p class="refer">나머지 이미지는 제거되도록 처리하였습니다.</p>
+							<div class="space"></div>
+							<p class="refer bold">삭제</p>
+							<p class="refer">게시글 삭제 시 해당 게시글의 업로드 이미지가 모두 제거되도록 처리하였습니다.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="section">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/ggv/11.mp4"></video>
+				</div>
+				<div>
+					<p>👨‍✈️&#128221; <i class="emphasis">'영화 등록/수정'</i> 페이지입니다.</p>
+					<p>영화의 각종 정보 및 상영 정보를 입력할 수 있습니다.</p>
+					<p class="refer">상영 정보는 과거 날짜로 설정할 수 없으며,</p>
+					<p class="refer">현재 날짜를 기준으로 최대 일주일 범위 내에서 설정할 수 있습니다.</p>
+				</div>
+			</div>
+			<div class="section">
+				<div class="videoWrap">
+					<video><source src="/Portfolio/resources/mp4/ggv/12.mp4"></video>
+				</div>
+				<div>
+					<p>👨‍✈️&#128221; 마지막 <i class="emphasis">'영화 등록(Excel)'</i> 기능입니다.</p>
+					<p>Excel 파일과 특정 경로에 위치한 영화 관련 파일들을 읽어 들여,</p>
+					<p>한 번에 다수의 영화를 등록할 수 있습니다.</p>
+					<p class="refer">Excel 파일 및 영화 관련 파일들은 웹 크롤링을 통해 추출한 영화 데이터를</p>
+					<p class="refer">기반으로 생성하였습니다.</p>
+				</div>
+			</div>
+			<div class="section end">
+				<div class="center">
+					<img src="/Portfolio/resources/images/main/project/details/end.jpeg">
+					<div>
+						<p>&#128591; <i class="emphasis">마치며</i></p>
+						<p>GGV는 저의 첫 개인 프로젝트이자, 가장 애정이 깊은 프로젝트입니다.</p>
+						<p>그만큼 보안적인 측면에서도 최대한 고려를 해보았고,</p>
+						<p>웹 크롤링, DB 프로시저 및 스케줄러 등 다양한 시도를 해보려고 노력하였습니다.</p>
+						<p>당시 개발 과정을 돌이켜보면, 지금보다도 개발 역량이 부족했을뿐더러,</p>
+						<p>주변에 도움을 요청할 곳이 없어 작은 기능 하나를 만드는 데에도 많은 시간이 소요되었고,</p>
+						<p>처음 겪어보는 알 수 없는 문제들로 인해 슬럼프에 빠지기 일쑤였습니다.</p>
+						<p>하지만 각종 오류와 문제를 해결해나가는 과정에서 성취감을 느낄 수 있었고,</p>
+						<p>다양한 경험들을 통한 능력 향상의 체감이 포기하지 않는 원동력이 되었던 것 같습니다.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div style="display:none;" class="destroy">
+	<script type="text/javascript">
+		detailsCommonScript();
+	</script>
+</div>

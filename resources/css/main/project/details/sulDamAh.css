@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+#logo{
+	width:180px;
+}
+
+[data-section="cancel"] div.refer{
+	margin-top:25px;
+}
+
+[data-section="cancel"] div.refer > ul > li{
+	margin:0px;
+}
