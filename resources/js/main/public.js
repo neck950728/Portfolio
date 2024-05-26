@@ -62,12 +62,14 @@ function compose_directory(uuid, target, data, isDirectoryInFolder){
 			var date = dateFormat(new Date());
 			
 			$.each(json.list, function(index, file){
-				var li_header = "<li id='" + file.id + "' class='file'>";
-				if(file.type == "폴더"){ li_header = "<li id='" + file.id + "' class='file folder'>"; }
+				var header = "<li id='" + file.id + "' class='file'>";
+				var name = "<li class='name'>";
+				if(file.type == "폴더"){ header = "<li id='" + file.id + "' class='file folder'>"; }
+				if(file.name == "GGV"){ name = "<li class='name' style='color:red;'>" }
 				
-				$("#" + uuid + " > #body > .content.directory > .body").append(li_header +
+				$("#" + uuid + " > #body > .content.directory > .body").append(header +
 																										  "<ul>" +
-																										  	  "<li class='name'>" +
+																										  	  name +
 																										  	  	  "<img src='" + file.icon + "'>" +
 																										  	  	  file.name +
 																										  	  "</li>" +
