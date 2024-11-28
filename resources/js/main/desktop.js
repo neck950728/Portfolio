@@ -46,9 +46,8 @@ $(function(){
 																		  	  	  	  "<p class='blog'><a href='https://blog.naver.com/dngu_icdi' target='_blank'>blog.naver.com/dngu_icdi</a></p>" +
 																			  	  	  "<div class='blogDescription'>" +
 																		  	  	  	  	  "<p>공유 목적이 아닌, 개인 기록용 블로그입니다.</p>" +
-																		  	  	  	  	  "<p>주로 학습 및 복습 차원에서 작성하였으며,</p>" +
-																		  	  	  	  	  "<p>그 외에도 이해가 잘 안 갔던 내용과 추가로 궁금했던 부분,</p>" +
-																		  	  	  	  	  "<p>그리고 개발 과정에서 겪었던 문제와 그 해결 방법 등을 정리해 두었습니다.</p>" +
+																		  	  	  	  	  "<p>이해가 잘 안 갔던 내용과 추가로 궁금했던 부분,</p>" +
+																		  	  	  	  	  "<p>그리고 개발 과정에서 겪었던 문제와 그 해결 방법 등을 기록해 두었습니다.</p>" +
 																		  	  	  	  "</div>" +
 																		  	  	  "</div>" +
 																		  	  	  "<img src='/Portfolio/resources/images/main/about/me.jpg'>" +
