@@ -43,14 +43,12 @@ $(function(){
 																		  	  	  	  "<p>Back-End 개발자(신입)</p>" +
 																		  	  	  	  "<p>1995.07.28</p>" +
 																		  	  	  	  "<p>인천광역시 부평구</p>" +
-																		  	  	  	  "<p class='blog'><a href='https://blog.naver.com/dngu_icdi' target='_blank'>blog.naver.com/dngu_icdi</a>(이웃 공개)</p>" +
+																		  	  	  	  "<p class='blog'><a href='https://blog.naver.com/dngu_icdi' target='_blank'>blog.naver.com/dngu_icdi</a></p>" +
 																			  	  	  "<div class='blogDescription'>" +
-																		  	  	  	  	  "<p>학습한 내용을 개인 기록 목적으로 작성 중인 비공개 블로그입니다.</p>" +
-																		  	  	  	  	  "<p>과거, 개인 소장이라는 명목하에 출처를 남기지 않고 스크랩하였던 게시물들이 상당 부분 포함되어 있어,</p>" +
-																		  	  	  	  	  "<p>제가 이웃으로 추가한 분들만 게시글을 열람할 수 있도록 해두었습니다.</p>" +
-																		  	  	  	  	  "<p>혹시 관심이 있으신 분들은 '이웃 신청'을 해주신다면,</p>" +
-																		  	  	  	  	  "<p>빠른 시일 내에 확인하여 추가해드리도록 하겠습니다.</p>" +
-																		  	  	  	  	  "<p>죄송합니다.</p>" +
+																		  	  	  	  	  "<p>공유 목적이 아닌, 개인 기록용 블로그입니다.</p>" +
+																		  	  	  	  	  "<p>주로 학습 및 복습 차원에서 작성하였으며,</p>" +
+																		  	  	  	  	  "<p>그 외에도 이해가 잘 안 갔던 내용과 추가로 궁금했던 부분,</p>" +
+																		  	  	  	  	  "<p>그리고 개발 과정에서 겪었던 문제와 그 해결 방법 등을 정리해 두었습니다.</p>" +
 																		  	  	  	  "</div>" +
 																		  	  	  "</div>" +
 																		  	  	  "<img src='/Portfolio/resources/images/main/about/me.jpg'>" +
