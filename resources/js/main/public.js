@@ -65,7 +65,6 @@ function compose_directory(uuid, target, data, isDirectoryInFolder){
 				var header = "<li id='" + file.id + "' class='file'>";
 				var name = "<li class='name'>";
 				if(file.type == "폴더"){ header = "<li id='" + file.id + "' class='file folder'>"; }
-				if(file.name == "GGV"){ name = "<li class='name' style='color:red;'>" }
 				
 				$("#" + uuid + " > #body > .content.directory > .body").append(header +
 																										  "<ul>" +
