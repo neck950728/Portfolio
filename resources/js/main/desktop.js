@@ -67,7 +67,6 @@ $(function(){
 																		  	  "<li class='skills'>" +
 																		  	  	  "<p class='boundary'><span>Skills</span></p>" +
 																		  	  	  "<p class='details'><span onclick=\"window.open('/Portfolio/resources/pdf/skills_details.pdf')\">자세히 보기</span></p>" +
-																		  	  	  "<p class='inProgress'>현재는 React와 JPA를 꾸준히 학습하고 있습니다.</p>" +
 																		  	  	  "<ul></ul>" +
 																		  	  "</li>" +
 																		  "</ul>");
