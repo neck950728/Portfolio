@@ -394,11 +394,6 @@
 	cursor:pointer;
 }
 
-.skills > .inProgress{
-	margin:0px; margin-bottom:30px;
-	color:#8f8f8f;
-}
-
 .skills > ul{
 	overflow:hidden;
 	margin-bottom:16px;
